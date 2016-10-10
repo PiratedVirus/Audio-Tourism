@@ -1,0 +1,241 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title Counting
+        link(rel="stylesheet", href="../Assets/Css/audio.css")
+        link(rel="stylesheet", href="../Assets/Css/1-tools/slick.css")
+        //- script(src="https://use.fontawesome.com/e9a633f963.js")
+        //- script(src="../Assets/Scripts/1-libraries/jquery2.min.js")
+    body
+        header
+            .navbar-wrapper
+              .container
+                .navbar.navbar-inverse.navbar-static-top.trans
+                  .navbar-header
+                    a.navbar-toggle(data-toggle='collapse', data-target='.nav-collapse')
+                      span.icon-bar
+                      span.icon-bar
+                      span.icon-bar
+                    a.navbar-brand(href='base.html') WALKIE AUDIO
+                  .navbar-collapse.collapse
+                    ul.nav.navbar-nav.text-right
+                      li.active
+                        a.hvr-underline-from-center(href='#states') Destinations
+                      li
+                        a.hvr-underline-from-center(href='#services') Services
+                      li
+                        a.hvr-underline-from-center(href='#about') About
+                      li
+                        a.hvr-underline-from-center(href='#faq') FAQ
+                      li
+                        a.hvr-underline-from-center(href='#contact-us') Contact Us
+
+            //
+              Carousel
+              ==================================================
+            #myCarousel.carousel.slide
+              // Indicators
+              ol.carousel-indicators
+                li.active(data-target='#myCarousel', data-slide-to='0')
+                li(data-target='#myCarousel', data-slide-to='1')
+                li(data-target='#myCarousel', data-slide-to='2')
+                li(data-target='#myCarousel', data-slide-to='3')
+              .carousel-inner
+                .item.active
+                  img.fill(src='../Assets/Img/sktaj.jpg')
+                  .container
+                    .carousel-caption
+                      h1 Feel the EXPERCIENCE 
+                .item
+                  img(src='../Assets/Img/tm.jpg')
+                  .container
+                    .carousel-caption
+                      h1.black-text You Walk, when we Talk
+              // Controls
+              a.left.carousel-control(href='#myCarousel', data-slide='prev')
+                span.icon-prev
+              a.right.carousel-control(href='#myCarousel', data-slide='next')
+                span.icon-next
+        
+        section#states(data-stellar-background-ratio="0.5")
+            .container
+                h3.text-center.dest.sec-header Destinations
+                .ui.link.cards
+                  .card
+                    .image
+                        img(src="../Assets/Img/mumbai.jpg")
+                    .content
+                      .header MUMBAI
+                      .meta
+                        span.date Maharashtra
+                      .description
+                        | City which never Sleeps
+                    .extra.content
+                        li
+                            a(href="kid.html") Explore
+                  .card
+                    .image
+                      img(src="../Assets/Img/abad.jpg")
+                    .content
+                      .header AURANGABAD
+                      .meta
+                        a Maharashtra
+                      .description
+                        | Capital Of Tourism Of Maharashtra
+                    .extra.content
+                        a(href="abad.html") Explore
+                  .card
+                    .image
+                        img.goa-img(src="../Assets/Img/goa.jpg")
+                    .content
+                      .header Goa
+                      .meta
+                        a Goa
+                      .description
+                        | A Perfect Holiday Destination
+                    .extra.content
+                      li
+                           a(href="#") Explore
+
+
+        section#services(data-stellar-background-ratio="0.5")
+            .container
+                .row
+                    .col-xs-12.text-center
+                        h3.text-center.sec-header  SERVICES
+                        p.about-para.text-center  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eum quibusdam labore asperiores provident ipsam eaque repellat aperiam! Perferendis, natus!
+                    .col-md-4.text-center
+                        .icon-box.text-center
+                            .glyphicon.glyphicon-picture
+                        .about-header
+                            h4 Awesome Design
+                            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi?
+                    .col-md-4.text-center.border
+                        .icon-box.text-center
+                            .glyphicon.glyphicon-bookmark
+                        .about-header
+                            h4 Creavtive Idea
+                            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi?
+                    .col-md-4.text-center
+                        .icon-box.text-center
+                            .glyphicon.glyphicon-thumbs-up
+                        .about-header
+                            h4 Strong Support
+                            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi?
+        
+        section#about(data-stellar-background-ratio="0.5")
+            .container
+                .row
+                    .col-xs-12.text-center
+                        h3.text-center.sec-header ABOUT US
+                    .col-md-6.col-xs-12.us-para
+                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ea sequi aut labore dignissimos, facilis magni omnis impedit, nemo, vel eum aspernatur error officiis neque exercitationem eaque debitis quam consectetur recusandae excepturi nulla. Fugiat itaque hic recusandae, iure neque labore velit veritatis quisquam laudantium inventore debitis quasi magni atque delectus facilis distinctio sapiente ad similique, officia ipsa quo dolorum animi?
+                    .col-md-6.col-xs-12.pie
+                        li.chart(data-percent="67")
+                            span.pie-slider 67%
+                        //- p.customer-satisfaction CUSTOMER SATISFACTION
+                    .col-md-12
+                      .container.two
+                          .row
+                              .col-xs-12.text-center
+                                  .col-xs-3
+                                      h1(class="timer" data-from="0" data-to='216' data-speed="5000" data-refresh-interval="10")
+                                      p.bg-caption-left MONUMENTS
+                                  .col-xs-3
+                                      h1(class="timer" data-from="0" data-to='27' data-speed="5000" data-refresh-interval="10")
+                                      p.bg-caption-middle CITIES
+                                  .col-xs-3
+                                      h1(class="timer" data-from="0" data-to='260' data-speed="5000" data-refresh-interval="10")
+                                      p.bg-caption-middle AUDIOS
+                                  .col-xs-3
+                                      h1(class="timer" data-from="0" data-to='320' data-speed="5000" data-refresh-interval="10")
+                                      span.kbps &nbsp;&nbsp;kbps
+                                      p.bg-caption-right QUALITY
+
+       
+
+        section#faq(data-stellar-background-ratio="0.5")
+            .container
+                h3.text-center FAQ
+                .info
+                    dl
+                        dt   Lorem ipsum dolor sit ?
+                        dd   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nisi voluptatem aspernatur fugiat ullam voluptates.
+                        dt  Lorem ipsum dolor ?
+                        dd   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatibus inventore. Doloremque non, omnis esse molestiae et sint quas illo.
+                        dt  Lorem ipsum ?
+                        dd   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        dt  Lorem ipsum dolor ?
+                        dd  Lorem ipsum dolor sit amet.
+                        dt  Lorem ipsum dolor  Lorem ipsum ?
+                        dd   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, itaque officia. Voluptas atque odit, dolor quasi unde dolorum illo eaque.
+                        dt  LOREM ?
+                        dd  YES.
+                        dt  Lorem ipsum dolor ?
+                        dd   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatibus corrupti non magnam veniam ullam?
+                        dt  Lorem  Lorem ipsum dolor sit amet ?
+                        dd   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ea libero delectus eius! Voluptate, culpa, quis. Earum sequi voluptates quia.
+
+        section#contact-us(data-stellar-background-ratio="0.5")
+                    .container
+                        .row
+                            .col-xs-12.text-center
+                                h1 Contact Us
+                            form.awesome-form.col-md-6
+                                  .input-group
+                                    input(type='text')
+                                    label Name
+
+                                  .input-group
+                                    input(type='email')
+                                    label  Email 
+
+                                  .input-area
+                                    textarea
+                                    label Message
+                            .col-md-5.font-details
+                                                        .address 
+                                                            p Nagewadi, Aurangabd Road, Aurangabad 431 203
+                                                        .tel
+                                                            p
+                                                                a(href="tel:8149306224") 0240-235645
+                                                        .fax 
+                                                            p 123456789
+                                                        .email
+                                                            p 
+                                                                a(href="mailto:info@info.in") info@info.in
+        
+        footer.clearfix
+            .text-center.footer-hack
+                h2  Lorem ipsum
+                .footer-links
+                    a(href="#") About Us
+                    a(href="#") Departments
+                    a(href="#") Contact Us
+
+
+
+
+
+
+
+    script(src="../Assets/Scripts/1-libraries/jquery2.min.js")
+    script(src="../Assets/Scripts/1-libraries/bootstrap.min.js")
+    script(src="../Assets/Scripts/1-libraries/semantic.min.js")
+    script(src="../Assets/Scripts/1-libraries/easypiechart.js")
+    script(src="../Assets/Scripts/1-libraries/wow.min.js")
+    script(src="../Assets/Scripts/1-libraries/jquery.countTo.js")
+    script(src="../Assets/Scripts/1-libraries/smoothscroll.js")
+    script(src="../Assets/Scripts/1-libraries/jquery.stellar.min.js")
+    script(src="../Assets/Scripts/functions.js")
+    script
+        $('.timer').countTo();
+        $.stellar();
+
+
+        
+
+

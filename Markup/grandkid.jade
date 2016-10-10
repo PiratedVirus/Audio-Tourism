@@ -1,0 +1,100 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title Counting
+        link(rel="stylesheet", href="../Assets/Css/audio.css")
+        link(rel="stylesheet", href="../Assets/Css/1-tools/slick.css")
+        //- script(src="https://use.fontawesome.com/e9a633f963.js")
+        //- script(src="../Assets/Scripts/1-libraries/jquery2.min.js")
+    body
+        header
+            .navbar-wrapper
+              .container
+                .navbar.navbar-inverse.navbar-static-top.trans
+                  .navbar-header
+                    a.navbar-toggle(data-toggle='collapse', data-target='.nav-collapse')
+                      span.icon-bar
+                      span.icon-bar
+                      span.icon-bar
+                    a.navbar-brand(href='base.html') WALKIE AUDIO
+                  .navbar-collapse.collapse
+                    ul.nav.navbar-nav.text-right
+                      ul.nav.navbar-nav.text-right
+                        li.active
+                          a.hvr-underline-from-center(href='#states') Destinations
+                        li
+                          a.hvr-underline-from-center(href='#services') Services
+                        li
+                          a.hvr-underline-from-center(href='#about') About
+                        li
+                          a.hvr-underline-from-center(href='#faq') FAQ
+                        li
+                          a.hvr-underline-from-center(href='#contact-us') Contact Us             
+                           // /container
+            // /navbar wrapper
+            //
+              Carousel
+              ==================================================
+            #myCarousel.carousel.slide
+              // Indicators
+              ol
+                li.active(data-target='#myCarousel', data-slide-to='0')
+                li(data-target='#myCarousel', data-slide-to='1')
+                li(data-target='#myCarousel', data-slide-to='2')
+              .carousel-inner
+                .item.active
+                  img.fill(src='../Assets/Img/abad-home (2).jpg')
+                  .container
+                    .carousel-caption
+                      h1.text-left.wh-abad  AURANGABAD
+
+        section#main
+            .container
+                    ol.breadcrumb
+                      li
+                        a(href='#') Maharashtra
+                      li.active Aurangabad
+                    .row
+                        .col-xs-12.text-center
+                            h3.padd AURANGABAD
+                        .col-md-6.col-xs-6.spot-thumbs
+                            section#portfolio
+                              header.text-center.section-heading.wow.bounceInDown(data-wow-offset='200')
+                              .container.text-center
+                                .row
+                                  .col-md-4.col-sm-6.col-xs-12.wow.fadeIn(data-wow-offset='400')
+                                        a(href="audio.html")
+                                          .thumb
+                                            img.img-responsive(src='Assets/Img/d_fort.jpg')
+                                            .overlay
+                                              .vertical-align
+                                                h2 BIBI KA MAQBARA
+                                              a
+                                                i.fa.fa-search
+                                  .col-md-4.col-sm-6.col-xs-12.wow.fadeIn(data-wow-offset='400', data-delay='0.5s')
+                                    .thumb
+                                      img.img-responsive(src='Assets/Img/abad 2.jpg')
+                                      .overlay
+                                        .vertical-align
+                                          h2 Caves
+                                        a
+                                          i.fa.fa-search
+                                  .col-md-4.col-sm-6.col-xs-12.wow.fadeIn(data-wow-offset='400', data-delay='0.7s')
+                                    .thumb
+                                      img.img-responsive(src='Assets/Img/abad 3.jpg')
+                                      .overlay
+                                        .vertical-align
+                                          h2 Ellora
+                                        a
+                                          i.fa.fa-search
+
+        footer.clearfix.footer_abad
+            .text-center.footer-hack
+                h2  Lorem ipsum
+                .footer-links
+                    a(href="base.html#about") About Us
+                    a(href="base.html#services") Services
+                    a(href="base.html#contact-us") Contact Us

@@ -1,0 +1,151 @@
+#contact-us
+	background-attachment: fixed
+	margin-top: 55px
+	padding-bottom:155px
+	.col-xs-12
+		h1
+			text-transform:uppercase
+			letter-spacing: 2px
+			font-weight: 400
+			color: $icon
+			margin-bottom: 30px
+
+	input,textarea
+		background: none
+		border: 2px solid $bg
+		color: $icon
+		padding: 25px 0px
+		font-size:18px
+		display:inline-block
+		&:focus,
+		&:active
+			outline:none	
+		&[type="text"],
+		&[type="email"],
+		&[type="textarea"]
+			border:none
+			border-bottom:2px solid $icon
+	.input-group
+		display: inline-block
+		margin-right: 20px
+		margin-bottom: 50px
+		width: 45%
+
+
+		input
+			padding: 15px 0px
+			width: 100%
+	label
+		position: absolute
+		top: 50%
+		left: 0
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+		font-size: 18px
+		font-weight: 300
+		color: #999
+		pointer-events:none
+		+transition
+
+	input:focus + label,
+	input.has-val + label
+		top: -10px
+		font-size: 12px
+		color: #aaa
+
+	.input-area
+		display: block
+		position: relative
+
+		textarea
+			padding: 15px 0px
+			width: 100%
+			border:none
+			outline:none
+			border-bottom: 2px solid $icon
+			&:focus,
+			&:active
+				outline:none
+
+	label
+		position: absolute
+		top: 50%
+		left: 0
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+		font-size: 18px
+		font-weight: 300
+		color: #999
+		pointer-events:none
+		+transition
+
+	textarea:focus + label,
+	textarea.has-val + label
+		top: -10px
+		font-size: 12px
+		color: #aaa
+
+	button
+		width: 100%
+		border: 2px solid #fff
+		text-transform:uppercase
+		color: #fff
+		background: $icon
+		margin-top: 15px
+		padding: 15px 0px
+		letter-spacing: 2px
+		font-size: 18px
+		&:active,
+		&:focus
+			outline:none
+
+
+
+	.font-details
+		speak:none
+		font:
+			family:"FontAwesome"
+			weight:normal
+			size:20px
+			varient:normal
+			style:normal
+		-webkit-font-smoothing:antialiased
+		margin:45px 0 0 40px
+		p
+			font-family: 'Source Sans Pro', sans-serif
+			display: inline-block
+			margin-bottom: 15px	
+
+
+	.address:before
+		content:""
+		padding-right: 15px
+		font-size: 30px
+		color: $icon
+		display: inline-block
+	.tel:before
+		content:""
+		padding-right: 15px
+		font-size: 30px
+		color: $icon
+		display: inline-block
+	.fax:before
+		content:""	
+		padding-right: 15px
+		font-size: 30px
+		color: $icon
+		display: inline-block
+	.email:before
+		content:""	
+		padding-right: 15px
+		font-size: 30px
+		color: $icon
+		display: inline-block
+	.map
+		margin: 40px 0px
+		background: url("../Img/geca_map.png")
+		// background-repeat: no-repeat
+		// background-size: cover
+		// +clearfix
+		height: 300px
+

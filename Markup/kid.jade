@@ -1,0 +1,81 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title Counting
+        link(rel="stylesheet", href="../Assets/Css/audio.css")
+        link(rel="stylesheet", href="../Assets/Css/1-tools/slick.css")
+        //- script(src="https://use.fontawesome.com/e9a633f963.js")
+        //- script(src="../Assets/Scripts/1-libraries/jquery2.min.js")
+    body
+        header
+            .navbar-wrapper
+              .container
+                .navbar.navbar-inverse.navbar-static-top.trans
+                  .navbar-header
+                    a.navbar-toggle(data-toggle='collapse', data-target='.nav-collapse')
+                      span.icon-bar
+                      span.icon-bar
+                      span.icon-bar
+                    a.navbar-brand(href='base.html') WALKIE AUDIO
+                  .navbar-collapse.collapse
+                    ul.nav.navbar-nav.text-right
+                      li.active
+                        a.hvr-underline-from-center(href='base.html#states') Destinations
+                      li
+                        a.hvr-underline-from-center(href='base.html#services') Services
+                      li
+                        a.hvr-underline-from-center(href='base.html#about') About
+                      li
+                        a.hvr-underline-from-center(href='base.html#faq') FAQ
+                      li
+                        a.hvr-underline-from-center(href='base.html#contact-us') Contact Us              
+                        // /container
+            // /navbar wrapper
+            //
+              Carousel
+              ==================================================
+            #myCarousel.carousel.slide
+              // Indicators
+              ol
+                li.active(data-target='#myCarousel', data-slide-to='0')
+                li(data-target='#myCarousel', data-slide-to='1')
+                li(data-target='#myCarousel', data-slide-to='2')
+              .carousel-inner
+                .item.active
+                  img.fill(src='../Assets/Img/skbbk.jpg')
+                  .container
+                    .carousel-caption
+                      h1.text-left  BIBI KA MAQBARA
+        
+          section#main
+              .container
+                      ol.breadcrumb
+                        li
+                          a(href='base.html') Maharashtra
+                        li
+                          a(href="abad.html") Aurangabad
+                        li.active BIBI KA MAQBARA
+                .container
+                    .row
+                        .col-xs-12.text-center.audio-header 
+                            h3.spl BIBI KA MAKBARA
+                        .col-xs-12.text-center.audio-player
+                            audio(controls='')
+                                source(src='Hall of fame.mp3' type="audio/ogg")
+                        .col-xs-12
+                            p.audio-script  Bibi Ka Maqbara is located ar Aurangabad.dolor sit amet, consectetur adipisicing elit. Earum illo ipsam, consequuntur animi, excepturi, enim necessitatibus quam cum dignissimos asperiores delectus magnam quo quae architecto maxime ab debitis perspiciatis quibusdam. Harum temporibus alias asperiores! Omnis ea voluptatem totam expedita fugiat, ad, sint eos officiis laboriosam sit, dicta eius repellat assumenda? Autem dignissimos consequatur explicabo dolore neque voluptates quae, similique optio, natus aut, laborum tempora nam aspernatur quod voluptatem non ea accusamus! Officiis quisquam non culpa similique modi, reiciendis quia magni vel quaerat distinctio sunt earum facere a itaque voluptate nobis impedit consectetur deserunt ipsum incidunt molestias, dicta necessitatibus. Est sit asperiores ab reiciendis, saepe tenetur nisi sed quis dolores corporis in accusantium accusamus nostrum quaerat deserunt vitae dolorum eaque suscipit laborum aspernatur atque ipsum ipsa molestiae! 
+                            p.audio-script-sec  Bibi Ka Maqbara Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eos dolor odio iusto recusandae vitae perspiciatis alias! Deserunt expedita beatae, praesentium ducimus commodi? Ea ducimus voluptas odit error animi tempora voluptatum tenetur quam qui perspiciatis, ad molestiae incidunt nostrum eius! Voluptates blanditiis sequi ut nam ipsum consectetur vel dolores possimus eos neque officia ratione ullam ipsam accusamus quo reiciendis deleniti fugit omnis tempora necessitatibus alias, distinctio in hic cum? Rerum id omnis ipsum, eaque eveniet laudantium totam in at. Iusto distinctio quis obcaecati eos facere consectetur, voluptate minima, nihil dolorum eligendi consequatur doloribus voluptatibus ipsum vero illum, sit ex reprehenderit veritatis? Veniam soluta possimus dolores ullam sapiente sed earum deleniti impedit sint iusto. Facere non totam, at sit tempore magni. Voluptatem optio assumenda distinctio ullam quae quod autem, unde aliquam ab repudiandae quidem vitae suscipit cum, beatae, quas consequuntur obcaecati facere non quam voluptas eligendi.
+                            p.audio-script-sec  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad esse ratione eius labore? Amet magnam ab ipsam autem recusandae soluta facilis asperiores, sapiente laudantium. Vel vero, dolore placeat modi soluta facere iure itaque impedit ut ullam cum, fugiat molestias sint non earum dicta explicabo, tenetur quia sed? Voluptatibus aspernatur at obcaecati excepturi esse, corporis quas ut fuga enim velit deleniti cumque harum nesciunt eveniet perferendis culpa, cupiditate molestiae similique molestias quia facilis, illum possimus. Dicta!
+
+        footer.clearfix.footer_abad
+            .text-center.footer-hack
+                h2  Lorem ipsum
+                .footer-links
+                    a(href="base.html#about") About Us
+                    a(href="base.html#services") Services
+                    a(href="base.html#contact-us") Contact Us
+
+
